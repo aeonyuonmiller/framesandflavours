@@ -1,5 +1,5 @@
 body {
-  background-color: #545100;
+  background-color: #363300;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,11 +16,19 @@ svg{ z-index: 10;}
   top: 40px;
   left: 40px;
 }
+a.social{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index:11;
+}
+p.grand strong{font-weight: 400; display: block;}
 .misc {
   position: relative;
   display: flex;
   justify-content: space-between;
-  bottom: 60px;
+  align-items: center;
+  bottom: 40px;
   margin: 150px 60px 0 60px;
   width: calc(100% - 120px);
 }
@@ -72,7 +80,7 @@ svg{ z-index: 10;}
 .intro { 
   position: absolute;
   padding: 3rem; 
-  background: #FF5A34;
+  background: #D26600;
   max-width: 700px;
   border-radius: 8px;
   margin: 0 auto;
@@ -103,7 +111,7 @@ svg{ z-index: 10;}
   align-items: center;
   gap: 16px;
   
-  color: #400419;
+  color: #363300;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
@@ -116,7 +124,7 @@ svg{ z-index: 10;}
   color: white;
 }
 h2 {
-  color: #FF5A34;
+  color: #D26600;
   font-size: 32px;
   font-weight: 300;
   line-height: 120%;
@@ -128,7 +136,7 @@ h2 {
 }
 
 footer{
-  background: #FF5A34;
+  background: #D26600;
   width: 100%;
   /* padding: 100px; */
   color: #ffffff;
