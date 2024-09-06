@@ -4,7 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Jost;
-  font-size: 22px;
+  /* font-size: 22px; */
   font-weight: 300;
   overflow-x: hidden;
 }
@@ -142,6 +142,7 @@ strong{font-weight: 400; display: block;}
 .einleitung p{
   line-height: 140%;
   font-weight: 300;
+  font-size: 22px;
 }
 
 footer{
@@ -235,15 +236,16 @@ footer p.grand{
                 .profile img {
                   width: 150px;
                   height: auto;
-                  border-radius: 8px;
                 }
         
-                .profile p {
+                p.tiny {
                   margin-top: 10px;
                   text-align: center;
+                  text-transform: uppercase;
                   font-size: 8px;
                   color: #F58833;
                   font-weight: 300;
+                  letter-spacing: .01em;
                 }
 
 
