@@ -119,12 +119,20 @@ strong{font-weight: 400; display: block;}
 }
 
 .einleitung {
-  max-width: 48ch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 48ch; */
   margin: 50vh auto 40vh auto;
   padding: 0 2em;
   color: white;
 }
-h2 {
+.einleitung h2,
+.einleitung p{
+  max-width: 48ch;
+}
+  h2 {
   color: #D26600;
   font-size: 32px;
   font-weight: 300;
@@ -160,8 +168,8 @@ footer p.grand{
 
 .preis{
   position: relative;
-  bottom: 0;
-  left: 0;
+  top: 0;
+  left: -330px;
 }
 
         /* Carousel Wrapper */
@@ -207,6 +215,41 @@ footer p.grand{
         .carousel::-webkit-scrollbar {
           display: none;
         }
+
+
+
+
+
+
+
+                .container {
+                  position: relative;
+                  display: grid;
+                  grid-template-columns: repeat(6, 1fr);
+                  gap: 20px;
+                  padding: 40px;
+                  justify-items: center;
+                  align-items: center;
+                }
+        
+                .profile img {
+                  width: 150px;
+                  height: auto;
+                  border-radius: 8px;
+                }
+        
+                .profile p {
+                  margin-top: 10px;
+                  text-align: center;
+                  font-size: 8px;
+                  color: #F58833;
+                  font-weight: 300;
+                }
+
+
+
+
+
 
 
 @keyframes rotate {
