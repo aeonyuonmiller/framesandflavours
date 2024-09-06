@@ -1,5 +1,5 @@
 body {
-  background-color: #400419;
+  background-color: #545100;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,6 +15,32 @@ svg{ z-index: 10;}
   position: fixed;
   top: 40px;
   left: 40px;
+}
+.misc {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  bottom: 60px;
+  margin: 150px 60px 0 60px;
+  width: calc(100% - 120px);
+}
+.misc a {
+  text-transform: uppercase;
+  color:#545100;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity ease-in-out .2s;
+}
+.misc span{ 
+  text-transform: uppercase;
+  color: #545100;
+  opacity: .5;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none; }
+.misc a:hover{ 
+  opacity: .8;
 }
 
 .hero{
@@ -33,7 +59,7 @@ svg{ z-index: 10;}
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  opacity: .4;
+  opacity: .9;
   /* margin: auto; */
 }
 .banner{
@@ -86,6 +112,7 @@ svg{ z-index: 10;}
 .einleitung {
   max-width: 48ch;
   margin: 320px auto 120px auto;
+  padding: 0 2em;
   color: white;
 }
 h2 {
