@@ -93,7 +93,7 @@ h2 {
   font-size: 32px;
   font-weight: 300;
   line-height: 120%;
-  width: 17ch;
+  width: 22ch;
 }
 .einleitung p{
   line-height: 140%;
@@ -112,10 +112,11 @@ footer{
 }
 footer p{
   margin: 0 auto 40px auto;
-  max-width: 550px;
+  max-width: 36ch;
   font-size: 22px;
 }
 footer p.grand{
+  max-width: 36ch;
   font-size: 32px;
 }
 
