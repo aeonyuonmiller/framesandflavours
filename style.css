@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#bottom {
+  scroll-margin-top: -50vh;
+}
+
 body {
   background-color: #363300;
   margin: 0;
@@ -9,6 +17,13 @@ body {
   overflow-x: hidden;
 }
 
+.cta {
+  transform: scale(1);
+  transition: transform ease-in-out .4s;
+}
+.cta:hover, .cta:focus {
+  transform: scale(0.98);
+}
 svg{ z-index: 10;}
 
 .logo { 
@@ -22,7 +37,7 @@ a.social{
   right: 30px;
   z-index:11;
 }
-h5{ color: #D26600; font-weight: 400; text-transform: uppercase; font-size: 10px; opacity: .6; margin-top: 60px; }
+h5{ color: #D26600; font-weight: 400; text-transform: uppercase; font-size: 10px; opacity: .6; margin-top: 8px; }
 strong{font-weight: 400; display: block;}
 .misc {
   position: relative;
@@ -68,7 +83,7 @@ strong{font-weight: 400; display: block;}
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  opacity: .9;
+  opacity: .6;
   /* margin: auto; */
 }
 .banner{
@@ -83,66 +98,75 @@ strong{font-weight: 400; display: block;}
   padding: 3rem; 
   background: #D26600;
   max-width: 700px;
+  width: 100%;
   border-radius: 8px;
   margin: 0 auto;
   top: 85dvh;
   color: white;
   z-index: 10;
 }
-
 .intro p {
-  max-width: 30ch;
+  /* max-width: 30ch; */
   line-height: 140%;
   letter-spacing: .01em;
-  font-size: 2rem;
+  font-size: 22px;
 }
-
-
 .intro div {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 20px auto;
 }
-
 .intro div span {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
-  
+  gap: 4px; 
   color: #363300;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
 }
+.intro h5 {
+  color: #000;
+  font-size: 10px;
+  font-weight: 500;
+}
+/* .intro p {
+  line-height: 120%;
+  font-size: 22px;
+} */
 
 .einleitung {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   /* max-width: 48ch; */
   margin: 50vh auto 40vh auto;
   padding: 0 2em;
   color: white;
 }
-.einleitung h2,
-.einleitung p{
-  max-width: 48ch;
-}
-  h2 {
+
+.einleitung h2 {
   color: #D26600;
   font-size: 32px;
   font-weight: 300;
   line-height: 120%;
-  width: 22ch;
+  /* width: 48ch; */
 }
 .einleitung p{
   line-height: 140%;
   font-weight: 300;
   font-size: 22px;
+  max-width: 50ch;
+}
+
+.bound{
+  position: relative;
+  margin: 0 auto;
+  max-width: 550px;
 }
 
 footer{
@@ -169,8 +193,9 @@ footer p.grand{
 
 .preis{
   position: relative;
-  top: 0;
-  left: -330px;
+  bottom: 80px;
+  left: -360px;
+  z-index: 15;
 }
 
         /* Carousel Wrapper */
