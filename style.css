@@ -255,23 +255,30 @@ footer p.grand{
                 .container {
                   position: relative;
                   display: grid;
-                  grid-template-columns: repeat(6, 1fr);
+                  grid-template-columns: repeat(6, 200px);
                   gap: 20px;
-                  padding: 20px;
-                  justify-items: center;
-                  align-items: center;
+                  height: 30vh;
+                  justify-items: start;
+                  align-items: start;
+                  margin-top: 40px;
                 }
 
+                .profile{
+                  width: 200px;
+                }
 
-        
                 .profile img {
+                  display: block;
                   width: 150px;
                   height: auto;
+                  margin: 0 auto;
                 }
         
                 p.tiny {
                   margin-top: 10px;
                   text-align: center;
+                  width: 200px;
+                  word-break: break-all;
                   text-transform: uppercase;
                   font-size: 8px;
                   color: #F58833;
@@ -292,13 +299,13 @@ footer p.grand{
 
 .rotation{ animation: rotate 22s linear infinite; transform-origin: center; }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1400px) {
   .container {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
   .container{ grid-template-columns: repeat(2, 1fr); }
 }
 
