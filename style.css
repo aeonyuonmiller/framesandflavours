@@ -51,7 +51,7 @@ strong{font-weight: 400; display: block;}
 }
 .misc a {
   text-transform: uppercase;
-  color:#545100;
+  color:#363300;
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
@@ -59,7 +59,7 @@ strong{font-weight: 400; display: block;}
 }
 .misc span{ 
   text-transform: uppercase;
-  color: #545100;
+  color: #363300;
   opacity: .5;
   font-size: 1rem;
   font-weight: 400;
@@ -131,7 +131,7 @@ strong{font-weight: 400; display: block;}
   text-transform: uppercase;
 }
 .intro h5 {
-  color: #000;
+  color: #212000;
   font-size: 10px;
   font-weight: 500;
 }
