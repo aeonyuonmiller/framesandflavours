@@ -30,6 +30,7 @@ svg{ z-index: 10;}
   position: fixed;
   top: 40px;
   left: 40px;
+  z-index: 20;
 }
 a.social{
   position: fixed;
@@ -110,6 +111,7 @@ strong{font-weight: 400; display: block;}
   line-height: 140%;
   letter-spacing: .01em;
   font-size: 22px;
+  margin: 0 20px;
 }
 .intro div {
   display: flex;
@@ -183,6 +185,8 @@ footer p{
   max-width: 600px;
   font-size: 22px;
   line-height: 130%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 footer p.grand{
   /* margin: 140px auto 40px auto; */
