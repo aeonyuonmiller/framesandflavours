@@ -82,7 +82,7 @@ svg {
 a.social {
   position: fixed;
   top: 30px;
-  right: 16px;
+  right: 30px;
   z-index: 11;
   transform: scale(1);
   transition: transform ease-in-out .2s;
