@@ -6,6 +6,10 @@ html {
   scroll-margin-top: -50vh;
 }
 
+.cursor-hover {
+  cursor: pointer;
+}
+
 body {
   background-color: #363300;
   margin: 0;
@@ -15,6 +19,39 @@ body {
   /* font-size: 22px; */
   font-weight: 300;
   overflow-x: hidden;
+}
+
+.beschreibung {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 700px;
+  font-size: 22px;
+  line-height: 140%;
+  color: #fff;
+  background: #D26600;
+  border-radius: 8px;
+  z-index: 20;
+
+  opacity: 0;
+  transition: all ease-in-out .4s;
+}
+
+.profile:hover .beschreibung,
+.profile:focus .beschreibung {
+  opacity: 1;
+  bottom: 40px;
+  transition: all ease-in-out .2s;
+}
+
+.beschreibung p {
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #363300;
 }
 
 .cta {
@@ -31,6 +68,10 @@ svg {
   z-index: 10;
 }
 
+.details span a {
+  text-align: center;
+}
+
 .logo {
   position: fixed;
   top: 40px;
@@ -41,8 +82,14 @@ svg {
 a.social {
   position: fixed;
   top: 30px;
-  right: 30px;
+  right: 16px;
   z-index: 11;
+  transform: scale(1);
+  transition: transform ease-in-out .2s;
+}
+
+a.social:hover {
+  transform: scale(0.95);
 }
 
 h5 {
@@ -72,7 +119,7 @@ strong {
 .misc a {
   text-transform: uppercase;
   color: #363300;
-  font-size: 1rem;
+  font-size: 12px;
   font-weight: 500;
   text-decoration: none;
   transition: opacity ease-in-out .2s;
@@ -82,7 +129,7 @@ strong {
   text-transform: uppercase;
   color: #363300;
   opacity: .5;
-  font-size: 1rem;
+  font-size: 12px;
   font-weight: 400;
   text-decoration: none;
 }
@@ -116,18 +163,19 @@ strong {
   position: absolute;
   right: -180px;
   top: -80px;
+  width: 160px;
   margin-right: 100px;
   z-index: 15;
 }
 
 .intro {
   position: absolute;
-  padding: 3rem;
+  padding: 40 40;
   background: #D26600;
   max-width: 700px;
   width: 100%;
   border-radius: 8px;
-  margin: 0 auto;
+  margin: 20px auto;
   top: 85dvh;
   color: white;
   z-index: 10;
@@ -177,7 +225,7 @@ strong {
   align-items: center;
   justify-content: start;
   /* max-width: 48ch; */
-  margin: 50vh auto 40vh auto;
+  margin: 350px auto;
   padding: 0 2em;
   color: white;
 }
@@ -239,17 +287,16 @@ footer p.grand {
 /* Carousel Wrapper */
 .carousel {
   display: flex;
-  top: 0;
+  top: -200px;
   left: 0;
   right: 0;
-  margin-top: -200px;
   margin-bottom: 140px;
   position: relative;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   /* width: 50%; */
-  height: 60vh;
+  height: auto;
   gap: 40px;
 }
 
@@ -261,10 +308,7 @@ footer p.grand {
   justify-content: center;
   align-items: center;
   height: 100%;
-  /* padding: 20px; */
   box-sizing: border-box;
-  /* background-color: #ccc; */
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
 }
 
 /* Carousel Images */
@@ -290,13 +334,14 @@ footer p.grand {
   margin-top: 40px;
 }
 
-div.profile {
+.profile {
   width: 200px;
 }
 
-div.profile img {
+.profile img {
   display: block;
-  width: 150px;
+  /* width: 150px; */
+  min-width: 200;
   height: auto;
   margin: 0 auto;
 }
@@ -305,9 +350,8 @@ p.tiny {
   margin-top: 10px;
   text-align: center;
   width: 200px;
-  word-break: break-all;
   text-transform: uppercase;
-  font-size: 8px;
+  font-size: 12px;
   color: #F58833;
   font-weight: 300;
   letter-spacing: .01em;
@@ -342,7 +386,7 @@ p.tiny {
 
 @media screen and (max-width: 1400px) {
   .container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .move80up {
@@ -354,14 +398,50 @@ p.tiny {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 980px) {
+  .logo {
+    top: 20px;
+    left: 20px;
+  }
+
+  .carousel-item {
+    height: 70vw;
+  }
+
+  .preis {
+    position: relative;
+    bottom: 80px;
+    right: 20px;
+    left: 120;
+  }
+
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .misc {
+    font-size: 8px;
+    width: calc(100% - 40px);
+    bottom: 20;
+  }
+
+  .banner {
+    position: absolute;
+    left: calc(50% - 60px);
+    top: -105px;
+    width: 130px;
+    z-index: 15;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .intro {
+    padding: 20px 0;
+    width: 100%;
+    margin: 0 20px;
+    top: 90dvh;
+  }
+
   .container {
     grid-template-columns: repeat(1, 1fr);
   }
